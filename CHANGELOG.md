@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-model-states` will be documented in this file (#188)
 
+## 2.14.2 - 2026-07-22
+
+### What's Changed
+
+* Bump actions/checkout from 6 to 7 by @dependabot[bot] in https://github.com/spatie/laravel-model-states/pull/309
+* feat: implement Stringable interface on abstract State class by @maartenpaauw in https://github.com/spatie/laravel-model-states/pull/310
+
+**Full Changelog**: https://github.com/spatie/laravel-model-states/compare/2.14.1...2.14.2
+
 ## 2.14.1 - 2026-04-22
 
 ### What's Changed
@@ -426,11 +435,13 @@ $model->canTransitionTo(StateB::class, 'status');
 
 
 
+
 ```
 You can now do:
 
 ```php
 $model->status->canTransitionTo(StateB::class);
+
 
 
 
